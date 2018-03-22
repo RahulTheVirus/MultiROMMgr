@@ -1,7 +1,28 @@
 {
     "devices": [
-        {
-            "names": [ "flo" ],
+       {
+            "names": [ "mocha" ],
+            "manifest_url": "https://rahulthevirus.github.io/multirom_mocha/manifest.json",
+            "check_gpg": false,
+            "ubuntu_touch": {
+                "enabled": false
+            },
+            "devices": [
+                {
+                    "name": "recovery",
+                    "path": "/dev/block/platform/sdhci-tegra.3/by-name/SOS"
+                },
+                {
+                    "name": "boot",
+                    "path": "/dev/block/platform/sdhci-tegra.3/by-name/LNX"
+                },
+                {
+                    "name": "cache",
+                    "path": "/dev/block/platform/sdhci-tegra.3/by-name/CAC"
+                }
+            ]
+        },
+        {            "names": [ "flo" ],
             "ubuntu_touch": {
                 "enabled": true
             },
